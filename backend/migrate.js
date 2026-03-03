@@ -11,7 +11,7 @@ async function migrate() {
     port: process.env.DB_PORT || 3306,
   });
 
-  const schema = fs.readFileSync('./schema.sql', 'utf8');
+  const schema = fs.readFileSync('./database/schema.sql', 'utf8');
   await connection.query(schema);
 
   console.log('✅ Database schema created successfully');
