@@ -9,9 +9,11 @@ async function migrate() {
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
     port: process.env.DB_PORT || 3306,
+    multipleStatements: true   // ✅ PUT IT HERE
   });
 
   const schema = fs.readFileSync('./database/schema.sql', 'utf8');
+
   await connection.query(schema);
 
   console.log('✅ Database schema created successfully');
