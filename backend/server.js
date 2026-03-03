@@ -7,9 +7,8 @@ require('dotenv').config();
 
 // Allowed origins whitelist
 const ALLOWED_ORIGINS = [
-  'http://localhost:5173',
-  'http://localhost:3000',
-  process.env.FRONTEND_URL,        // e.g. https://fairsplitwise.netlify.app
+  'https://fairsplitwise.netlify.app',
+  /\.netlify\.app$/
 ].filter(Boolean);                  // remove any undefined entries
 
 const corsOptions = {
