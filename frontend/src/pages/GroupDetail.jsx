@@ -5,7 +5,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import {
   Plus, ArrowLeft, Users, DollarSign, CheckCircle2, Clock,
   X, Calculator, Tag, Trash2, Share2, TrendingDown, TrendingUp,
-  MessageCircle, Download, Star, ChevronDown, Filter
+  MessageCircle, Download, Star, ChevronDown, Filter, Crown
 } from 'lucide-react';
 import api from '../lib/api';
 import useAuthStore from '../store/authStore';
